@@ -1,0 +1,84 @@
+h3 {
+  margin: 10px 0;
+  color: #787775;
+}
+
+button {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 99px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin: 30px 20px 0 0;
+}
+button svg {
+  transition: 0.2s ease;
+}
+
+button.cta {
+  background: #4776f0;
+  border: 1px solid #4776f0;
+}
+button.cta svg {
+  fill: #fff;
+}
+
+button.cta:hover {
+  background: #fff;
+  color: #4776f0;
+}
+button.cta:hover svg {
+  fill: #4776f0;
+}
+
+button.sec {
+  border: 1px solid #787775;
+  background: none;
+  color: #000;
+}
+
+button.sec:hover {
+  border: 1px solid #4776f0;
+  color: #4776f0;
+}
+
+button svg {
+  margin-right: 10px;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7);
+  visibility: hidden;
+  opacity: 0;
+  filter: blur(40px);
+  transition: 0.4s ease;
+}
+
+.popup.active {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+.popup.active .popup-content video {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.popup-content video {
+  filter: blur(40px);
+  transform: scale(0.3);
+  width: 50vw;
+  transition: 0.5s;
+}/*# sourceMappingURL=Hero.css.map */
